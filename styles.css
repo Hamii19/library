@@ -7,8 +7,19 @@
   font-family: 'Roboto', sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 p{
   line-height: 1.5;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
 }
 
 ul{
@@ -74,6 +85,10 @@ nav{
 
 .nav__link--primary:hover{
   text-decoration: none;
+}
+
+.no-cursor{
+  cursor:not-allowed;
 }
 
 /* LANDING */
@@ -287,4 +302,32 @@ h2{
 
 #explore{
   background-color: rgba(115,66,214,0.1);
+}
+
+/* FOOTER */
+
+footer{
+  background-color: #242424;
+}
+
+.footer__logo{
+  display: flex;
+}
+
+.footer__logo--img{
+  width: 160px;
+  filter: grayscale(1) invert(1);
+}
+
+.footer__link,
+.footer__copyright{
+  color: #ffffff;
+}
+
+.footer__list{
+  margin: 24px 0 20px 0;
+}
+
+.footer__link{
+  padding: 0 8px;
 }
